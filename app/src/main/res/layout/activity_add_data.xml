@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add Data"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#464545"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AddImage"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/Captured_Image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/add_image"
+            android:scaleType="fitXY"></ImageView>
+
+
+        <EditText
+            android:id="@+id/PlaceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Title"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:fontFamily="@font/helvetica_light"
+            android:background="@drawable/title_bg"/>
+        <EditText
+            android:id="@+id/PlaceDescription"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:hint="Description"
+            android:padding="10dp"
+            android:gravity="top|left"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:fontFamily="@font/helvetica_light"
+            android:background="@drawable/title_bg"/>
+        <EditText
+            android:id="@+id/PlaceAddress"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:hint="Address"
+            android:padding="10dp"
+            android:gravity="top|left"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:editable="false"
+            android:fontFamily="@font/helvetica_light"
+            android:background="@drawable/title_bg"/>
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:background="@drawable/submit_bg"/>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
